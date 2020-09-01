@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Stopwatch</title>
+
+   <style>
+       body{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+       }
+    .content{
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+       @media (max-width: 450px) {
+        .display{
+            font-size: 3.8rem;
+        }
+    }
+
+   </style>
+ 
+</head>
+<body class="bg-info"> 
+
+    <div class="content mx-auto text-center bg-dark text-light py-5">
+        <div class="display display-2 ">00:00:00</div>
+        <div class="button_control mt-3">
+            <button class="btn btn-success start">START</button>
+            <button class="btn btn-danger stop">STOP</button>
+            <button class="btn btn-warning reset">RESET</button>
+        </div>
+    </div>
+  
+<script src="uri.js"></script>
+   
+</body>
+</html>
